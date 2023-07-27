@@ -13,9 +13,17 @@ MID_PERIOD = 180 # days
 SHORT_PERIOD = 1 # days
 
 
+TEST_SIZE = 0.2
+RANDOM_STATE = 42
 
+MODEL_FILE_PATH = './models/{name}.sav'
+MODELS = ['RF', 'GB', 'SVM']
+TRADE_RANGE = 500
+SLEEP_TIME = 600 # second
 MOCK_D_PATH = os.getcwd() + '/../mockD/'
 
 
 ENV = 'PROD'
 GEN_MOCK = False
+
+
