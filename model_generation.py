@@ -13,7 +13,7 @@ def dump_model(model, name):
   
 def model_generator():
     # load long term data 
-    stock_historical_data = load_data(period=LONG_PERIOD)
+    stock_historical_data = load_data(period=SHORT_PERIOD)
     # data processing 
     processed_data = data_processing(stock_data=stock_historical_data)
     # prediction models
@@ -22,6 +22,8 @@ def model_generator():
     dump_model(rf_model, 'RF')
     dump_model(gb_model, 'GB')
     dump_model(svm_model, 'SVM')
+
+    print("New models generated")
     return
 
 
